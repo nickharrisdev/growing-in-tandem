@@ -1,11 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { DatePicker } from "@material-ui/pickers";
 import './App.css';
+import getPlants from './lib/fetchPlants';
 
 const Calendar = () => {
   const [date, changeDate] = useState(new Date());
 
-  // prettier-ignore
+  useEffect(() => {
+    console.log(date);
+    //change the state of plants to be rendereds
+    getPlants(date);
+  }, [date])
+
+
   return (
     <>
       <DatePicker
