@@ -1,3 +1,18 @@
+body {
+  background-color: rgb(168, 209, 138);
+}
+
 .App {
   text-align: center;
+  margin: 20px 40px;
+}
+
+.calendar-container {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.date-picker {
+  background-color: rgb(189, 220, 169);
 }
