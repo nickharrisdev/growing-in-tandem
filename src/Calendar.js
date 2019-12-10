@@ -7,7 +7,6 @@ const Calendar = () => {
   const [date, changeDate] = useState(new Date());
 
   useEffect(() => {
-    console.log(date);
     //change the state of plants to be rendereds
     getPlants(date);
   }, [date])
