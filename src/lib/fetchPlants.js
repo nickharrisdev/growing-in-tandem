@@ -3,8 +3,9 @@ const plants = require('./plants.json');
 function getPlants(selectedDate) {
     const endTime = 1583798040000;
     let waterToday = [];
-    const diffTime = Math.abs(endTime - selectedDate);
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    const selectedSeconds = selectedDate.getTime();
+    const diffTime = Math.abs(endTime - selectedSeconds);
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
     const dayOfWk = selectedDate.getDay();
     
     //takes in a date, and returns the plant(s) that need to be watered on the given day. 
@@ -17,7 +18,7 @@ function getPlants(selectedDate) {
     for (let i = 0; i <= plants.length - 1; i++) {
         let waterAfter = plants[i].water_after.split("").splice(0, 2).join("");
         let plantName = plants[i].name
-        console.log("Water", plantName, "after", waterAfter, "days");
+        //console.log("Water", plantName, "after", waterAfter, "days");
         
         if (daysPassed === 1) {
             //no watering on day 1
@@ -32,8 +33,10 @@ function getPlants(selectedDate) {
             }
         } 
     }
+    
     // daysPassed % waterAfter === 1 && (daysPassed + 1) % waterAfter !== 0 && (daysPassed - 1) % waterAfter !== 0
     //console logs for testing 
+    console.log(diffTime, diffDays, daysPassed, selectedDate, selectedSeconds)
     console.log("To water today:", waterToday)
     return waterToday;
 }

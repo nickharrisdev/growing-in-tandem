@@ -10,9 +10,10 @@ body {
 .calendar-container {
   padding: 15px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  height: 100%;
 }
 
-.date-picker {
-  background-color: rgb(189, 220, 169);
+.message {
+  padding: 15px;
 }

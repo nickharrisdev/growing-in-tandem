@@ -2,14 +2,16 @@ import React from "react";
 
 const Message = (waterToday) => {
     console.log(Object.values(waterToday));
-    const waterTodayArr = Object.values(waterToday);
-    const toWater = waterTodayArr.map((plant) =>
-        <p>{plant}</p>
-    )
+    const waterTodayOuterArr = Object.values(waterToday);
+    const waterTodayArr = waterTodayOuterArr[0];
+    function toWater(plant) {
+        return <p>{plant}</p>
+    }
 
+    console.log("list of plants to water today", waterTodayArr);
     return (
-    <div>
-       Water the following plants today: {toWater}
+    <div className="message">
+       Water the following plants today: {waterTodayArr.map(toWater)}
     </div>
   );
 };
