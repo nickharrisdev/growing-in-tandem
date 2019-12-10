@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { DatePicker } from "@material-ui/pickers";
 import './App.css';
 import getPlants from './lib/fetchPlants';
+import Message from './Message.js'
 
 const Calendar = () => {
   const [date, changeDate] = useState(new Date());
@@ -26,6 +27,7 @@ const Calendar = () => {
         onChange={changeDate}
         className="date-picker"
       />
+      {waterToday ? <Message waterToday={waterToday} /> : null} 
     </>
   );
 };
