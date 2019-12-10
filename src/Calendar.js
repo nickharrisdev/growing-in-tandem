@@ -5,10 +5,12 @@ import getPlants from './lib/fetchPlants';
 
 const Calendar = () => {
   const [date, changeDate] = useState(new Date());
+  const [waterToday, setWaterToday] = useState([]);
 
   useEffect(() => {
     //change the state of plants to be rendereds
-    getPlants(date);
+    const plantsArr = getPlants(date);
+    setWaterToday(plantsArr);
   }, [date])
 
 
