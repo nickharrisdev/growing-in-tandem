@@ -18,7 +18,7 @@ const theme = createMuiTheme({
 
 function App() {
   return (
-    <MuiPickersUtilsProvider utils={DateFnsUtils} >
+    <MuiPickersUtilsProvider utils={DateFnsUtils} borderRadius={50}>
       <div className="App">
         <Typography variant="h4" component="h1">Growing In Tandem</Typography>
         <div className="calendar-container">
