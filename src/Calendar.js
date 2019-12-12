@@ -9,14 +9,14 @@ const Calendar = () => {
   const [waterToday, setWaterToday] = useState([]);
 
   useEffect(() => {
-    //change the state of plants to be rendereds
+    //change the state of plants to be rendered
     const plantsArr = getPlants(date);
     setWaterToday(plantsArr);
   }, [date])
 
 
   return (
-    <div class="date-picker-container">
+    <div className="date-picker-container">
       <DatePicker
         autoOk
         color="secondary"
@@ -25,6 +25,7 @@ const Calendar = () => {
         openTo="date"
         value={date}
         onChange={changeDate}
+        data-testid="date-picker"
       />
       {waterToday ? <Message waterToday={waterToday} /> : null} 
     </div>
