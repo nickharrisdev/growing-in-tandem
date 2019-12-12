@@ -1,9 +1,22 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, cleanup } from '@testing-library/react';
 import App from './App';
+import Message from './Message'
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+afterEach(cleanup);
+
+it('renders', () => {
+  const { asFragment } = render(<App />);
+  expect(asFragment()).toMatchSnapshot();
+});
+
+it('renders', () => {
+  const { asFragment } = render(<Message waterToday={['plant1', 'plant2', 'plant3']} />)
+  expect(asFragment()).toMatchSnapshot();
+});
+
+it('inserts array into tag <p> in Message.js', () => {
+  const { getByTestId } = render(<Message waterToday={['plant1']} />);
+
+  expect(getByTestId('plant-name')).toHaveTextContent('plant1');
 });
