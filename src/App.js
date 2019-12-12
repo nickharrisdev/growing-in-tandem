@@ -20,7 +20,16 @@ function App() {
   return (
     <MuiPickersUtilsProvider utils={DateFnsUtils} borderRadius={50}>
       <div className="App">
-        <Typography variant="h2" component="h1" className="title">Growing In Tandem</Typography>
+        <div className="heading">
+          <Typography variant="h2" component="h1">Growing In Tandem</Typography>
+          <Typography variant="h6" component="h1" className="sub-heading">
+            <i>Lush office greenery is <a href="https://www.exeter.ac.uk/news/featurednews/title_409094_en.html" target="_blank" className="study-link">proven</a> to 
+               promote happiness and productivity amongst workers. Inspire personal growth by watering
+               the plants on a regular basis!
+            </i>
+            <hr></hr>
+          </Typography>
+        </div>
         <div className="calendar-container">
           <Calendar theme={theme} />
         </div>
