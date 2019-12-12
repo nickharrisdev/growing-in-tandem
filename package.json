@@ -1,4 +1,5 @@
 {
+  "homepage": "http://nickharriscodes.github.io/growing-in-tandem",
   "name": "growing-in-tandem",
   "version": "0.1.0",
   "private": true,
@@ -10,11 +11,14 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "date-fns": "^2.0.0-beta.5",
+    "gh-pages": "^2.1.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0"
   },
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
