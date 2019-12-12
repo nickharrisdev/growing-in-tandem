@@ -13,12 +13,7 @@ const theme = createMuiTheme({
             main: green[300],
         }
     },
-    shape: {
-        borderRadius: 15,
-    }
 })
-
-console.log(theme)
 
 ReactDOM.render(
     <MuiThemeProvider theme={theme}>

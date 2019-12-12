@@ -3,7 +3,7 @@ import Typography from '@material-ui/core/Typography';
 
 const Message = ({ waterToday, date }) => {
     function toWater(plant) {
-        return (<li data-testid="plant-name">{plant}</li>)
+        return (<li data-testid="plant-name" key={plant}>{plant}</li>)
     }
 
     function checkPlants() {

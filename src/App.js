@@ -18,12 +18,12 @@ const theme = createMuiTheme({
 
 function App() {
   return (
-    <MuiPickersUtilsProvider utils={DateFnsUtils} borderRadius={50}>
+    <MuiPickersUtilsProvider utils={DateFnsUtils}>
       <div className="App">
         <div className="heading">
           <Typography variant="h2" component="h1">Growing In Tandem</Typography>
           <Typography variant="h6" component="h1" className="sub-heading">
-            <i>Lush office greenery is <a href="https://www.exeter.ac.uk/news/featurednews/title_409094_en.html" target="_blank" className="study-link">proven</a> to 
+            <i>Lush office greenery is <a href="https://www.exeter.ac.uk/news/featurednews/title_409094_en.html" target="_blank" rel="noopener noreferrer" className="study-link">proven</a> to 
                promote happiness and productivity amongst workers. Inspire personal growth by watering
                the plants on a regular basis!
             </i>
