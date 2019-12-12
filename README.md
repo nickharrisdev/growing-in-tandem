@@ -1,13 +1,27 @@
 # Growing In Tandem
+
+![Happy Plants](dancingplants.gif)
+
 Caring for indoor plants has been proven by study after study to provide many psychological benefits -- reducing anxiety, stress, inspiring creativity, and more. This application allows the user to grow as their plants grow by mapping some preset data for a group of plants to a calendar. Simply click a date on the calendar, and the application will display a list of plants that need to be watered on the selected day. 
 
 This project was made for the Tandem Apprenticeshp coding challenge, but could be modified to apply to any set of plants. 
 
 ## Installation
 
-## Available Scripts
+To run this project locally, you will need to have node installed. 
+- on OSX, install git and type `brew install git`
+- on OSX, install [home brew](http://brew.sh/) and type `brew install node`
+- on Windows, use the installer available at [nodejs.org](http://nodejs.org/)
+- Open the terminal
+- Go to a folder where you would like to install the project. Then type the following to download the repo:
 
-In the project directory, you can run:
+```
+git clone https://github.com/nickharriscodes/growing-in-tandem.git
+```
+
+### `yarn install`
+
+Make sure you're in the root directory of the repo, and type `yarn install` in the terminal to install the dependencies and packages. 
 
 ### `yarn start`
 
@@ -34,3 +48,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Contributing 
 I would love to hear from you if you have ideas for ways to improve and expand upon this project. To contribute, simply fork this repo, make your changes and create a pull request with a short explanation of your work. Screenshots of any UI changes are appreciated! 
+
+# Happy Plants == Happy People
