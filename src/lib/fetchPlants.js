@@ -1,11 +1,11 @@
 const plants = require('./plants.json');
 
 function getPlants(selectedDate) {
-    const endTime = 1583776740000;
+    const endTime = 1583816340000;
     let waterToday = [];
     const selectedSeconds = selectedDate.getTime();
     const diffTime = Math.abs(endTime - selectedSeconds);
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
     const dayOfWk = selectedDate.getDay();
     
     //takes in a date, and returns the plant(s) that need to be watered on the given day. 
@@ -25,7 +25,6 @@ function getPlants(selectedDate) {
             waterToday.push(plantName);
         }
     }
-
     return waterToday;
 }
 
