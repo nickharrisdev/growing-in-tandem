@@ -30,7 +30,7 @@ function App() {
             <hr></hr>
           </Typography>
         </div>
-        <div className="calendar-container">
+        <div>
           <Calendar theme={theme} />
         </div>
       </div>
