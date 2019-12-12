@@ -7,6 +7,9 @@ import Message from './Message.js';
 const Calendar = () => {
   const [date, changeDate] = useState(new Date());
   const [waterToday, setWaterToday] = useState([]);
+  const dateStr = date.toString();
+
+  console.log(typeof dateStr) 
 
   useEffect(() => {
     //change the state of plants to be rendered
@@ -20,14 +23,14 @@ const Calendar = () => {
       <DatePicker
         autoOk
         color="secondary"
-        orientation="landscape"
+        orientation="portrait"
         variant="static"
         openTo="date"
         value={date}
         onChange={changeDate}
         data-testid="date-picker"
       />
-      {waterToday ? <Message waterToday={waterToday} /> : null} 
+      {waterToday && dateStr ? <Message waterToday={waterToday} date={dateStr}/> : null} 
     </div>
   );
 };

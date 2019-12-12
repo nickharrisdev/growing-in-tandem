@@ -3,8 +3,11 @@ body {
 }
 
 .App {
-  text-align: center;
   margin: 20px 40px;
+}
+
+.title {
+  text-align: center;
 }
 
 .calendar-container {
@@ -15,9 +18,14 @@ body {
 
 .date-picker-container {
   padding: 20px;
+  width: 350px;
   border-radius: 20px;
 }
 
 .message {
   padding: 15px;
+}
+
+.plants-list {
+
 }

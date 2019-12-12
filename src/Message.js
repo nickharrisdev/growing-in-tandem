@@ -1,19 +1,27 @@
 import React from "react";
+import Typography from '@material-ui/core/Typography';
 
-const Message = (waterToday) => {
-    console.log(Object.values(waterToday));
-    const waterTodayOuterArr = Object.values(waterToday);
-    const waterTodayArr = waterTodayOuterArr[0];
-    
+const Message = ({ waterToday, date }) => {
     function toWater(plant) {
-        return <p data-testid="plant-name">{plant}</p>
+        return (<li data-testid="plant-name">{plant}</li>)
     }
 
-    console.log("list of plants to water today", waterTodayArr);
+    function checkPlants() {
+      if (waterToday.length === 0) {
+        return (
+          <Typography variant="h5" component="h1">No plants need watering today! Enjoy some you time.</Typography>
+        )
+      } else {
+        return (
+          <Typography variant="h5" component="h1">To water on {date.slice(0, 10)}: <ol className="plants-list">{waterToday.map(toWater)}</ol></Typography>
+        )
+      }
+    }
+
     return (
-    <div className="message">
-       Water the following plants today: {waterTodayArr.map(toWater)}
-    </div>
+      <div className="message">
+        {checkPlants()}
+      </div>
   );
 };
 

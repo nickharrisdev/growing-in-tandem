@@ -20,7 +20,7 @@ function App() {
   return (
     <MuiPickersUtilsProvider utils={DateFnsUtils} borderRadius={50}>
       <div className="App">
-        <Typography variant="h4" component="h1">Growing In Tandem</Typography>
+        <Typography variant="h2" component="h1" className="title">Growing In Tandem</Typography>
         <div className="calendar-container">
           <Calendar theme={theme} />
         </div>
