@@ -6,6 +6,8 @@ Caring for indoor plants has been proven by study after study to provide many ps
 
 This project was made for the Tandem Apprenticeshp coding challenge, but could be modified to apply to any set of plants. 
 
+To view a demo, go to: https://nickharriscodes.github.io/growing-in-tandem/
+
 ## Installation
 
 To run this project locally, you will need to have node installed. 
