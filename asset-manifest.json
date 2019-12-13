@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/growing-in-tandem/static/css/main.fd6124ad.chunk.css",
-    "main.js": "/growing-in-tandem/static/js/main.61408828.chunk.js",
-    "main.js.map": "/growing-in-tandem/static/js/main.61408828.chunk.js.map",
-    "runtime-main.js": "/growing-in-tandem/static/js/runtime-main.17e0e063.js",
-    "runtime-main.js.map": "/growing-in-tandem/static/js/runtime-main.17e0e063.js.map",
-    "static/js/2.0482c2e0.chunk.js": "/growing-in-tandem/static/js/2.0482c2e0.chunk.js",
-    "static/js/2.0482c2e0.chunk.js.map": "/growing-in-tandem/static/js/2.0482c2e0.chunk.js.map",
-    "index.html": "/growing-in-tandem/index.html",
-    "precache-manifest.7d1bcabb4806418c5aa0430c7fd27002.js": "/growing-in-tandem/precache-manifest.7d1bcabb4806418c5aa0430c7fd27002.js",
-    "service-worker.js": "/growing-in-tandem/service-worker.js",
-    "static/css/main.fd6124ad.chunk.css.map": "/growing-in-tandem/static/css/main.fd6124ad.chunk.css.map",
-    "static/js/2.0482c2e0.chunk.js.LICENSE": "/growing-in-tandem/static/js/2.0482c2e0.chunk.js.LICENSE"
+    "main.css": "/growing-in-tandem/public/static/css/main.fd6124ad.chunk.css",
+    "main.js": "/growing-in-tandem/public/static/js/main.54075ebb.chunk.js",
+    "main.js.map": "/growing-in-tandem/public/static/js/main.54075ebb.chunk.js.map",
+    "runtime-main.js": "/growing-in-tandem/public/static/js/runtime-main.ae0eed21.js",
+    "runtime-main.js.map": "/growing-in-tandem/public/static/js/runtime-main.ae0eed21.js.map",
+    "static/js/2.0482c2e0.chunk.js": "/growing-in-tandem/public/static/js/2.0482c2e0.chunk.js",
+    "static/js/2.0482c2e0.chunk.js.map": "/growing-in-tandem/public/static/js/2.0482c2e0.chunk.js.map",
+    "index.html": "/growing-in-tandem/public/index.html",
+    "precache-manifest.69812e6aca3883f290d2f9d612e7a0a4.js": "/growing-in-tandem/public/precache-manifest.69812e6aca3883f290d2f9d612e7a0a4.js",
+    "service-worker.js": "/growing-in-tandem/public/service-worker.js",
+    "static/css/main.fd6124ad.chunk.css.map": "/growing-in-tandem/public/static/css/main.fd6124ad.chunk.css.map",
+    "static/js/2.0482c2e0.chunk.js.LICENSE": "/growing-in-tandem/public/static/js/2.0482c2e0.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.17e0e063.js",
+    "static/js/runtime-main.ae0eed21.js",
     "static/js/2.0482c2e0.chunk.js",
     "static/css/main.fd6124ad.chunk.css",
-    "static/js/main.61408828.chunk.js"
+    "static/js/main.54075ebb.chunk.js"
   ]
 }
