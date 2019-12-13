@@ -19,7 +19,7 @@ function getPlants(selectedDate) {
 
         if (daysPassed % waterAfterNum === 0 && dayOfWk === 1) {
             waterToday.push(plantName);
-        } else if ((dayOfWk === 3 || dayOfWk === 5) && waterAfterNum === 2) {
+        } else if ((dayOfWk === 3 || dayOfWk === 5 || dayOfWk === 1) && waterAfterNum === 2) {
             waterToday.push(plantName);
         } else if ((dayOfWk === 4 || dayOfWk === 1) && waterAfterNum === 3) {
             waterToday.push(plantName);
