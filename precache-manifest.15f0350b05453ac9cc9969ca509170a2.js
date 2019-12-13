@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bb60865ac66608f81b2fd716edbc4d24",
+    "revision": "de033789d28883ee90fac81e87f6e2c3",
     "url": "/growing-in-tandem/index.html"
   },
   {
-    "revision": "b2b8bb6c5064bda1612b",
+    "revision": "5a3dd604404927adf698",
     "url": "/growing-in-tandem/static/css/main.fd6124ad.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/growing-in-tandem/static/js/2.0482c2e0.chunk.js.LICENSE"
   },
   {
-    "revision": "b2b8bb6c5064bda1612b",
-    "url": "/growing-in-tandem/static/js/main.61408828.chunk.js"
+    "revision": "5a3dd604404927adf698",
+    "url": "/growing-in-tandem/static/js/main.bd748456.chunk.js"
   },
   {
     "revision": "32827482e2300fbf17ec",
