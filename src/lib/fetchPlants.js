@@ -7,14 +7,14 @@ function addPlant (name, days) {
 }
 
 function getPlants(selectedDate) {
+    //takes in a date, and returns the plant(s) that need to be watered on the given day. 
+
     const endTime = 1583816340000;
     let waterToday = [];
     const selectedSeconds = selectedDate.getTime();
     const diffTime = Math.abs(endTime - selectedSeconds);
     const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
     const dayOfWk = selectedDate.getDay();
-    
-    //takes in a date, and returns the plant(s) that need to be watered on the given day. 
     const daysPassed = 84 - diffDays;
 
     /// loop through the plants to get water after days, then evaluate: 
@@ -34,4 +34,4 @@ function getPlants(selectedDate) {
     return waterToday;
 }
 
-module.exports = { getPlants, addPlant }
+module.exports = getPlants;
