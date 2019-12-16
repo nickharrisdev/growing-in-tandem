@@ -1,22 +1,27 @@
 import React, { useState, useEffect } from "react";
 import { DatePicker } from "@material-ui/pickers";
 import './App.css';
-import getPlants from './lib/fetchPlants';
+import { getPlants } from './lib/fetchPlants';
 import Message from './Message.js';
+import AddPlantForm from './AddPlantForm'
 
 const Calendar = () => {
   const [date, changeDate] = useState(new Date());
   const [waterToday, setWaterToday] = useState([]);
+  const [addingPlant, toggleAddingPlant] = useState(false);
   const dateStr = date.toString();
 
   useEffect(() => {
-    //change the state of plants to be rendered
     const plantsArr = getPlants(date);
     setWaterToday(plantsArr);
-  }, [date])
+    toggleAddingPlant(false);
+  }, [addingPlant, date])
 
   return (
     <div className="calendar-container">
+      <div>
+        <AddPlantForm toggleAddingPlant={toggleAddingPlant}/>
+      </div>
       <div className="date-picker-container">
         <DatePicker
           autoOk

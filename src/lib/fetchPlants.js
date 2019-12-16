@@ -1,14 +1,13 @@
 const plants = require('./plants.json');
 
-function addPlant (name, days) {
-    // takes in name, water after x days, appends a keyvalue pair to the plants object
-    plants[plants.length - 1].name = name;
-    plants[plants.length - 1].water_after = days;
+export function addPlant (newPlantName, days) {
+    // takes in name, water after x days, appends a keyvalue pair to the plants array
+    plants.push({name: newPlantName, water_after: days})
 }
 
-function getPlants(selectedDate) {
+export function getPlants(selectedDate) {
     //takes in a date, and returns the plant(s) that need to be watered on the given day. 
-
+    console.log(plants);
     const endTime = 1583816340000;
     let waterToday = [];
     const selectedSeconds = selectedDate.getTime();
@@ -33,5 +32,3 @@ function getPlants(selectedDate) {
     }
     return waterToday;
 }
-
-module.exports = getPlants;
