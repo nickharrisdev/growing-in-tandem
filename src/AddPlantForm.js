@@ -11,6 +11,8 @@ function AddPlantForm ({ toggleAddingPlant }) {
 		const daysNum = parseInt(days);
 		if (!(Number.isInteger(daysNum))) {
 			toggleError(true);
+		} else if (name === '' || name=== ' ') {
+			toggleError(true);
 		} else {
 			addPlant(name, days);
 			setName('');
@@ -30,27 +32,29 @@ function AddPlantForm ({ toggleAddingPlant }) {
 
 	function displayError() {
 		return (
-			<p>Please enter a number</p>
+			<p className="error">Please enter plant name and a number of days</p>
 		)
 	}
 
 	return (
-		<div>
-			<Typography variant="h5" component="h1"><strong>Add a plant</strong></Typography>
+		<div className="add-plant-form">
+			<Typography variant="h5" component="h1"><strong>Add Plant</strong></Typography>
 			<div>
 				<label htmlFor="name-input">
-					Plant name
+					Plant Name
+					<br></br>
 					<input type="text" onChange={e => handleNameChange(e.target.value)} value={name || ''} id="name-input" />
 				</label>
 				<br></br>
 				<label htmlFor="days-input">
-					Water after
+					Watering Frequency (Days)
+					<br></br>
 					<input type="text" onChange={e => handleDaysChange(e.target.value)} value={days || ''} id="days-input" />
 				</label>
 				<br></br>
 				{error ? displayError() : null}
 			</div>
-			<button type="button" onClick={handleSubmit}>Submit</button>
+			<button className="submit-btn" type="button" onClick={handleSubmit}>Submit</button>
 		</div>
 	);
 }

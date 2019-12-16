@@ -28,7 +28,7 @@ hr {
 
 .calendar-container {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -54,11 +54,43 @@ hr {
   color:#1b5e20;
 }
 
+/* form styling */
+
+.add-plant-form {
+  text-align: center;
+  padding: 15px;
+}
+
+input {
+  margin: 10px;
+  border: none;
+  border-radius: 3px;
+  height: 35px;
+  width: 250px;
+  font-size: medium;
+}
+
+.submit-btn {
+  height: 35px;
+  width: 150px;
+  border: none;
+  border-radius: 3px;
+  font-size: medium;
+  margin: 10px;
+  background-color:#4caf50;
+}
+
+.error {
+  color: red;
+}
+
+/* responsive */
+
 @media screen and (max-width: 800px) {
   .sub-heading {width: 95%;}
   .calendar-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     height: 100%;
   }
