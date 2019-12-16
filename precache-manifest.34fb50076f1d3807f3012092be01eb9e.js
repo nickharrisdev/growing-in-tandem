@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "776e1e84c86286f0afb5884134a993cf",
+    "revision": "820983b7afd439506c80ac01b8e50b78",
     "url": "/growing-in-tandem/index.html"
   },
   {
-    "revision": "94ea43f3a0a5aada9300",
-    "url": "/growing-in-tandem/static/css/main.45853d8f.chunk.css"
+    "revision": "9865870d804f9c74bd7b",
+    "url": "/growing-in-tandem/static/css/main.1d7687a4.chunk.css"
   },
   {
     "revision": "a081eb351fe8c3512d13",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/growing-in-tandem/static/js/2.a6b560ea.chunk.js.LICENSE"
   },
   {
-    "revision": "94ea43f3a0a5aada9300",
-    "url": "/growing-in-tandem/static/js/main.8f53baa5.chunk.js"
+    "revision": "9865870d804f9c74bd7b",
+    "url": "/growing-in-tandem/static/js/main.2b10f1aa.chunk.js"
   },
   {
     "revision": "32827482e2300fbf17ec",

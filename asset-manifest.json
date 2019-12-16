@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/growing-in-tandem/static/css/main.45853d8f.chunk.css",
-    "main.js": "/growing-in-tandem/static/js/main.8f53baa5.chunk.js",
-    "main.js.map": "/growing-in-tandem/static/js/main.8f53baa5.chunk.js.map",
+    "main.css": "/growing-in-tandem/static/css/main.1d7687a4.chunk.css",
+    "main.js": "/growing-in-tandem/static/js/main.2b10f1aa.chunk.js",
+    "main.js.map": "/growing-in-tandem/static/js/main.2b10f1aa.chunk.js.map",
     "runtime-main.js": "/growing-in-tandem/static/js/runtime-main.17e0e063.js",
     "runtime-main.js.map": "/growing-in-tandem/static/js/runtime-main.17e0e063.js.map",
     "static/js/2.a6b560ea.chunk.js": "/growing-in-tandem/static/js/2.a6b560ea.chunk.js",
     "static/js/2.a6b560ea.chunk.js.map": "/growing-in-tandem/static/js/2.a6b560ea.chunk.js.map",
     "index.html": "/growing-in-tandem/index.html",
-    "precache-manifest.5c307a9385ccf3a76d586509e97047ff.js": "/growing-in-tandem/precache-manifest.5c307a9385ccf3a76d586509e97047ff.js",
+    "precache-manifest.34fb50076f1d3807f3012092be01eb9e.js": "/growing-in-tandem/precache-manifest.34fb50076f1d3807f3012092be01eb9e.js",
     "service-worker.js": "/growing-in-tandem/service-worker.js",
-    "static/css/main.45853d8f.chunk.css.map": "/growing-in-tandem/static/css/main.45853d8f.chunk.css.map",
+    "static/css/main.1d7687a4.chunk.css.map": "/growing-in-tandem/static/css/main.1d7687a4.chunk.css.map",
     "static/js/2.a6b560ea.chunk.js.LICENSE": "/growing-in-tandem/static/js/2.a6b560ea.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.17e0e063.js",
     "static/js/2.a6b560ea.chunk.js",
-    "static/css/main.45853d8f.chunk.css",
-    "static/js/main.8f53baa5.chunk.js"
+    "static/css/main.1d7687a4.chunk.css",
+    "static/js/main.2b10f1aa.chunk.js"
   ]
 }
