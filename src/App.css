@@ -59,6 +59,10 @@ hr {
 .add-plant-form {
   text-align: center;
   padding: 15px;
+  font-size: x-large;
+  border: 2px solid #1b5e20;
+  border-radius: 3px;
+  margin: 15px;
 }
 
 input {
@@ -75,13 +79,21 @@ input {
   width: 150px;
   border: none;
   border-radius: 3px;
-  font-size: medium;
+  font-size: large;
   margin: 10px;
   background-color:#4caf50;
 }
 
 .error {
   color: red;
+}
+
+.plant-name {
+  margin-top: 15px;
+}
+
+.watering-freq {
+  margin-top: 15px;
 }
 
 /* responsive */

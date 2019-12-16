@@ -40,17 +40,21 @@ function AddPlantForm ({ toggleAddingPlant }) {
 		<div className="add-plant-form">
 			<Typography variant="h5" component="h1"><strong>Add Plant</strong></Typography>
 			<div>
-				<label htmlFor="name-input">
-					Plant Name
-					<br></br>
-					<input type="text" onChange={e => handleNameChange(e.target.value)} value={name || ''} id="name-input" />
-				</label>
+				<div className="plant-name">
+					<label htmlFor="name-input" >
+						Plant Name
+						<br></br>
+						<input type="text" onChange={e => handleNameChange(e.target.value)} value={name || ''} id="name-input" />
+					</label>
+				</div>
 				<br></br>
-				<label htmlFor="days-input">
-					Watering Frequency (Days)
-					<br></br>
-					<input type="text" onChange={e => handleDaysChange(e.target.value)} value={days || ''} id="days-input" />
-				</label>
+				<div className="watering-freq">
+					<label htmlFor="days-input" >
+						Watering Frequency (Days)
+						<br></br>
+						<input type="text" onChange={e => handleDaysChange(e.target.value)} value={days || ''} id="days-input" />
+					</label>
+				</div>
 				<br></br>
 				{error ? displayError() : null}
 			</div>
