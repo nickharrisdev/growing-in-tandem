@@ -7,19 +7,19 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core';
 import green from '@material-ui/core/colors/green'
 
 const theme = createMuiTheme({
-    palette: {
-        primary: green,
-        secondary: {
-            main: green[300],
-        }
-    },
+	palette: {
+		primary: green,
+		secondary: {
+			main: green[300],
+		}
+	},
 })
 
 ReactDOM.render(
-    <MuiThemeProvider theme={theme}>
-        <App />
-    </MuiThemeProvider>,
-    document.getElementById('root')
+	<MuiThemeProvider theme={theme}>
+		<App />
+	</MuiThemeProvider>,
+	document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change

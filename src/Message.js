@@ -2,7 +2,8 @@ import React from "react";
 import Typography from '@material-ui/core/Typography';
 
 const Message = ({ waterToday, date }) => {
-    function toWater(plant) {
+    
+  function toWater(plant) {
         return (<li data-testid="plant-name" key={plant}>{plant}</li>)
     }
 

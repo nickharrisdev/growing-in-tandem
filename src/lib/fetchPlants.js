@@ -7,7 +7,6 @@ export function addPlant (newPlantName, days) {
 
 export function getPlants(selectedDate) {
     //takes in a date, and returns the plant(s) that need to be watered on the given day. 
-    console.log(plants);
     const endTime = 1583816340000;
     let waterToday = [];
     const selectedSeconds = selectedDate.getTime();

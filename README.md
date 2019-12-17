@@ -2,7 +2,7 @@
 
 ![Happy Plants](dancingplants.gif)
 
-Caring for indoor plants has been proven by study after study to provide many psychological benefits -- reducing anxiety, stress, inspiring creativity, and more. This application allows the user to grow as their plants grow by mapping some preset data for a group of plants to a calendar. Simply click a date on the calendar, and the application will display a list of plants that need to be watered on the selected day. 
+Caring for indoor plants has been proven by study after study to provide many psychological benefits -- reducing anxiety, stress, inspiring creativity, and more. This application allows the user to grow as their plants grow by mapping some preset data for a group of plants to a calendar. Simply click a date on the calendar, and the application will display a list of plants that need to be watered on the selected day. Additionally, new plants can be added to the calendar by using the Add Plant Form. 
 
 This project was made for the Tandem Apprenticeshp coding challenge, but could be modified to apply to any set of plants. 
 
