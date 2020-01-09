@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 import DateFnsUtils from '@date-io/date-fns';
@@ -15,9 +15,22 @@ const theme = createMuiTheme({
   },
 });
 
-
 function App() {
-  //const [date, changeDate] = useState(new Date());
+  const [allPlants, setAllPlants] = useState([]);
+  const [addingPlant, toggleAddingPlant] = useState(false);
+  
+  const hitApi = () => {
+    fetch('https://calm-cliffs-46733.herokuapp.com/plants')
+        .then(response => response.json())
+        .then(items => { setAllPlants(items) })
+        .then(console.log("api has been hit", allPlants))
+        .catch(err => console.log(err))
+  }
+
+  useEffect(() => {
+    hitApi();
+    toggleAddingPlant(false);
+  }, [addingPlant])
 
   return (
     <MuiPickersUtilsProvider utils={DateFnsUtils}>
@@ -33,7 +46,7 @@ function App() {
           </Typography>
         </div>
         <div>
-          <Calendar theme={theme} />
+          <Calendar theme={theme} allPlants={allPlants} hitApi={hitApi} toggleAddingPlant={toggleAddingPlant} addingPlant={addingPlant}/>
         </div>
       </div>
     </ MuiPickersUtilsProvider>
