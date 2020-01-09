@@ -3,16 +3,20 @@ import Typography from '@material-ui/core/Typography';
 
 const AllPlants = ({ allPlants }) => {
 	function plantsList(plant) {
-			return (<li data-testid="plant-name" key={plant}>{plant.name}</li>)
+			return (<div data-testid="plant-name" key={plant}>{plant.name}</div>)
 	}
 	
 	return (
-		<Typography variant="h5" component="h1">
-			<strong>All Plants:</strong>
-			<ul>
-				{allPlants.map(plantsList)}
-			</ul>
-		</Typography>
+		<div className="all-plants-container">
+			<div className="all-plants">
+				<Typography variant="h5" component="h1">
+					<strong>All Plants</strong>
+					<div>
+						{allPlants.map(plantsList)}
+					</div>
+				</Typography>
+			</div>
+		</div>
 	)  
 }
  
