@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import { createMuiTheme } from '@material-ui/core/styles';
 import green from '@material-ui/core/colors/green';
 import lightGreen from '@material-ui/core/colors/green';
+import AllPlants from './AllPlants';
 
 const theme = createMuiTheme({
   palette: {
@@ -47,6 +48,9 @@ function App() {
         </div>
         <div>
           <Calendar theme={theme} allPlants={allPlants} hitApi={hitApi} toggleAddingPlant={toggleAddingPlant} addingPlant={addingPlant}/>
+        </div>
+        <div>
+          <AllPlants allPlants={allPlants} />
         </div>
       </div>
     </ MuiPickersUtilsProvider>
