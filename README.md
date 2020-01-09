@@ -48,6 +48,10 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### Material UI
+
+This project uses Material UI's Date Picker component as the calendar part of the UI. For more information about the Date Picker and Material UI in general, check out their docs: https://material-ui-pickers.dev/demo/datepicker
+
 ## Contributing 
 I would love to hear from you if you have ideas for ways to improve and expand upon this project. To contribute, simply fork this repo, make your changes and create a pull request with a short explanation of your work. Screenshots of any UI changes are appreciated! 
 
