@@ -17,7 +17,7 @@ const theme = createMuiTheme({
 })
 
 const routing = (
-	<Router>
+	<Router basename={process.env.PUBLIC_URL}>
 		<div>
 			<MuiThemeProvider theme={theme}>
 				<App />

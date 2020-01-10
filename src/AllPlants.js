@@ -30,21 +30,19 @@ const AllPlants = ({ allPlants, toggleAddingPlant }) => {
 	}
 	
 	function plantsList(plant, index) {
-			return (
-				<div data-testid="plant-name" key={index}>
-					<TableRow>
-						<TableCell align="left">
-							<p class="cell-content">{plant.name}</p>
-						</TableCell>
-						<TableCell>
-							<p className="cell-content">{plant.days} days</p>
-						</TableCell>
-						<TableCell>
-							<button className="delete-btn" type="button" onClick={() => deleteItem(plant.id)}>X</button>
-						</TableCell>
-					</TableRow>
-				</div>
-			);
+		return (
+			<TableRow key={index}>
+				<TableCell align="left">
+					<p className="cell-content">{plant.name}</p>
+				</TableCell>
+				<TableCell>
+					<p className="cell-content">{plant.days} days</p>
+				</TableCell>
+				<TableCell>
+					<button className="delete-btn" type="button" onClick={() => deleteItem(plant.id)}>X</button>
+				</TableCell>
+			</TableRow>
+		);
 	}
 	
 	return (
