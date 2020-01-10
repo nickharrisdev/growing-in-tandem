@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
+import { Route } from 'react-router-dom';
 import DateFnsUtils from '@date-io/date-fns';
 import Calendar from './Calendar';
 import Typography from '@material-ui/core/Typography';
@@ -46,11 +47,18 @@ function App() {
             <hr></hr>
           </Typography>
         </div>
+        
         <div>
-          <Calendar theme={theme} allPlants={allPlants} hitApi={hitApi} toggleAddingPlant={toggleAddingPlant} addingPlant={addingPlant}/>
+          <Route 
+            exact path="/" 
+            render={props => <Calendar {...props} theme={theme} allPlants={allPlants} hitApi={hitApi} toggleAddingPlant={toggleAddingPlant} addingPlant={addingPlant} />}
+          />
         </div>
+
         <div>
-          <AllPlants allPlants={allPlants} />
+          <Route 
+            path="/allplants" 
+            render={props => <AllPlants {...props} theme={theme} allPlants={allPlants} />}/>
         </div>
       </div>
     </ MuiPickersUtilsProvider>

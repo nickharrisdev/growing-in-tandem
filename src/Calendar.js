@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { DatePicker } from "@material-ui/pickers";
+import { Link, withRouter } from 'react-router-dom';
 import './App.css';
 // import { getPlants } from './lib/fetchPlants';
 import Message from './Message.js';
@@ -72,8 +73,11 @@ const Calendar = ({ allPlants, toggleAddingPlant, addingPlant }) => {
       <div>
         {waterToday && dateStr ? <Message waterToday={waterToday} date={dateStr}/> : null}
       </div>
+      <Link to="/allplants">
+        <p>see all plants</p>
+      </Link>
     </div>
   );
 };
 
-export default Calendar;
+export default withRouter(Calendar);

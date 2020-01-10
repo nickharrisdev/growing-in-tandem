@@ -29,19 +29,19 @@ function AddPlantForm ({ toggleAddingPlant }) {
   }
 
     function handleSubmit() {
-        const daysNum = parseInt(days);
-        if (!(Number.isInteger(daysNum))) {
-            toggleError(true);
-        } else if (name === '' || name=== ' ') {
-            toggleError(true);
-        } else {
-            addPlant(name, days);
-            setName('');
-            setDays('');
-            toggleError(false);
-            toggleAddingPlant(true);
-        }
-}
+			const daysNum = parseInt(days);
+			if (!(Number.isInteger(daysNum))) {
+					toggleError(true);
+			} else if (name === '' || name=== ' ') {
+					toggleError(true);
+			} else {
+					addPlant(name, days);
+					setName('');
+					setDays('');
+					toggleError(false);
+					toggleAddingPlant(true);
+			}
+		}
 
     function handleNameChange(x) {
         setName(x);

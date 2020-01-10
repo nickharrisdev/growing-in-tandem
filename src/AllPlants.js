@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Typography from '@material-ui/core/Typography';
+import { Link, withRouter } from 'react-router-dom';
 
 const AllPlants = ({ allPlants }) => {
-	function plantsList(plant) {
-			return (<div data-testid="plant-name" key={plant}>{plant.name}</div>)
+	function plantsList(plant, index) {
+			return (<div data-testid="plant-name" key={index}>{plant.name}</div>)
 	}
 	
 	return (
@@ -12,12 +13,15 @@ const AllPlants = ({ allPlants }) => {
 				<Typography variant="h5" component="h1">
 					<strong>All Plants</strong>
 					<div>
-						{allPlants.map(plantsList)}
+						{allPlants ? allPlants.map(plantsList) : null}
 					</div>
 				</Typography>
 			</div>
+			<Link to="/">
+        <p>calendar view</p>
+      </Link>
 		</div>
 	)  
 }
  
-export default AllPlants;
+export default withRouter(AllPlants);
