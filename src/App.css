@@ -54,6 +54,8 @@ hr {
   color:#1b5e20;
 }
 
+/* all plants component */
+
 .all-plants-container {
   display: flex;
   flex-direction: row;
@@ -65,7 +67,28 @@ hr {
   padding: 10px;
   border: 2px solid #1b5e20;
   border-radius: 3px;
+  font-size: large;
 }
+
+table, td {
+  table-layout: auto;
+  width: 100%;
+}
+
+.delete-btn {
+  border: none;
+  border-radius: 3px;
+  font-size: large;
+  margin: 10px;
+  background-color:#4caf50;
+  color: black;
+}
+
+.cell-content {
+  font-size: large;
+}
+
+/* links */
 
 .link-container {
   display: flex;
