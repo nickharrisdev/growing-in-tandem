@@ -54,28 +54,32 @@ const Calendar = ({ allPlants, toggleAddingPlant, addingPlant }) => {
   }, [date, allPlants, addingPlant])
 
   return (
-    <div className="calendar-container">
-      <div>
-        <AddPlantForm toggleAddingPlant={toggleAddingPlant} />
+    <div>
+      <div className="calendar-container">
+        <div>
+          <AddPlantForm toggleAddingPlant={toggleAddingPlant} />
+        </div>
+        <div className="date-picker-container">
+          <DatePicker
+            autoOk
+            color="secondary"
+            orientation="portrait"
+            variant="static"
+            openTo="date"
+            value={date}
+            onChange={changeDate}
+            data-testid="date-picker"
+          />
+        </div>
+        <div>
+          {waterToday && dateStr ? <Message waterToday={waterToday} date={dateStr}/> : null}
+        </div>
       </div>
-      <div className="date-picker-container">
-        <DatePicker
-          autoOk
-          color="secondary"
-          orientation="portrait"
-          variant="static"
-          openTo="date"
-          value={date}
-          onChange={changeDate}
-          data-testid="date-picker"
-        />
+      <div className="link-container">
+        <Link to="/allplants" className="link-component">
+          <p className="link">View All Plants</p>
+        </Link>
       </div>
-      <div>
-        {waterToday && dateStr ? <Message waterToday={waterToday} date={dateStr}/> : null}
-      </div>
-      <Link to="/allplants">
-        <p>see all plants</p>
-      </Link>
     </div>
   );
 };

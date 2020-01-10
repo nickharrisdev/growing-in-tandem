@@ -67,6 +67,26 @@ hr {
   border-radius: 3px;
 }
 
+.link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.link {
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  text-decoration: none;
+  background-color:#4caf50;
+}
+
+.link-component {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+
 /* form styling */
 
 .add-plant-form {
@@ -95,6 +115,7 @@ input {
   font-size: large;
   margin: 10px;
   background-color:#4caf50;
+  color: black;
 }
 
 .error {

@@ -8,18 +8,22 @@ const AllPlants = ({ allPlants }) => {
 	}
 	
 	return (
-		<div className="all-plants-container">
-			<div className="all-plants">
-				<Typography variant="h5" component="h1">
-					<strong>All Plants</strong>
-					<div>
-						{allPlants ? allPlants.map(plantsList) : null}
-					</div>
-				</Typography>
+		<div>
+			<div className="all-plants-container">
+				<div className="all-plants">
+					<Typography variant="h5" component="h1">
+						<strong>All Plants</strong>
+						<div>
+							{allPlants ? allPlants.map(plantsList) : null}
+						</div>
+					</Typography>
+				</div>
 			</div>
-			<Link to="/">
-        <p>calendar view</p>
-      </Link>
+			<div className="link-container">
+				<Link to="/" className="link-component">
+					<p className="link">View Calendar</p>
+				</Link>
+			</div>
 		</div>
 	)  
 }
