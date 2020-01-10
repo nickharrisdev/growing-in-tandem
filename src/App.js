@@ -58,7 +58,7 @@ function App() {
         <div>
           <Route 
             path="/allplants" 
-            render={props => <AllPlants {...props} theme={theme} allPlants={allPlants} />}/>
+            render={props => <AllPlants {...props} theme={theme} allPlants={allPlants} toggleAddingPlant={toggleAddingPlant} />}/>
         </div>
       </div>
     </ MuiPickersUtilsProvider>
